@@ -1,0 +1,15 @@
+Estacion 20
+Bajan 0 
+Bajan 0 
+Suben 30  
+Suben 10 
+Estacion 30
+Bajan 20 
+Bajan 2 
+Suben 50 
+Suben 3 
+Estacion 200
+Bajan 0 
+Bajan 0 
+Suben 50 
+Suben 3 
