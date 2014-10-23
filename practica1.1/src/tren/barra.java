@@ -1,7 +1,7 @@
 package tren;
 import javax.swing.*;
-import java.util.*;
 
+import java.util.*;
 import java.awt.*;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
@@ -66,7 +66,8 @@ public void actionPerformed(ActionEvent e) {
 	} 
 	else  if(e.getSource() == boton3)
 	{
-		JOptionPane.showMessageDialog(null, "3");//aca va el proceso de atras
+		JOptionPane.showMessageDialog(null, "se esta cargando su configuracion");//aca va el proceso de atras
+		leermenos4();
 	
 	} 
 	
@@ -100,6 +101,24 @@ public void metodos()
 	
 	
 }
+public void leermenos4(){
+System.out.print(i);
+System.out.print(r);
+int paa= Integer.parseInt(cl.get(i-1));
+int pab= Integer.parseInt(cl.get(i-3));
+pasajeroa=pasajeroa - paa+ pab;
+// ahora hacemos lo mismo con pasajeros tipo b y la distancia para ver la cantidad de bagones
+i=i-4;
+r=r-5;
+
+}
+
+
+
+
+
+
+
 //leemos linea por linea y transformamos a entero el valor 
 public void leermas4() 
 {
