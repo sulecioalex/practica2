@@ -23,6 +23,9 @@ public class barra extends JFrame implements ActionListener{
 	   double pasajerob;
 	   int bagona;
 	   double bagonb;
+	   double carbona;
+	   double carbonb;
+	   double carbon;
 	static JMenuBar barra;
 	JMenu menu1;
 	JButton boton1;
@@ -133,16 +136,25 @@ System.out.println(subenb);
 if (subena  > 0) {
 	pasajeroa=pasajeroa+subena-bajana;
 	bagona=pasajeroa/10;
-	System.out.println("necesita " + bagona);		
+	System.out.println("necesita " + bagona);	
+	carbona=(bagona * 10);
+	
 }
 
 if (subenb  > 0) {
 	pasajerob=pasajerob+subenb-bajanb;
-	bagonb=pasajerob/40;
-	if (bagonb  > 0   && bagonb < 1) {	
-	System.out.println("necesita 1");	
-	}
+	bagonb=Math.ceil (pasajerob/40);
+		
+	System.out.println("necesita "+ bagonb);
+	carbonb= Math.ceil (bagonb*10);
+
 }
+
+carbon=carbona+carbonb+distancia;
+
+
+carbon=Math.ceil (carbon/100);
+System.out.println(carbon);
 
 
 }
