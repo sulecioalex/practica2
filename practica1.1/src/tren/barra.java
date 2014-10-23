@@ -19,6 +19,10 @@ public class barra extends JFrame implements ActionListener{
 	   ArrayList<String> cl = new ArrayList<String>();
 	   int i;
 	   int r;
+	   int pasajeroa;
+	   double pasajerob;
+	   int bagona;
+	   double bagonb;
 	static JMenuBar barra;
 	JMenu menu1;
 	JButton boton1;
@@ -53,7 +57,7 @@ public void actionPerformed(ActionEvent e) {
 	}
 	else  if(e.getSource() == boton2)
 	{
-		JOptionPane.showMessageDialog(null, "2");//aca va el proceso de adelate
+		JOptionPane.showMessageDialog(null, "se esta cargando su configuracion");//aca va el proceso de adelate
 		leermas4();
 	
 	} 
@@ -98,9 +102,9 @@ public void leermas4()
 {
 	int distancia=0;
 	int subena=0;
-	int subenb=0;
+	double subenb=0;
 	int bajana=0;
-	int bajanb=0;
+	double bajanb=0;
 	String l1="";
 	i=r+4;
 	for(int x=0+r;x<=i;x++){
@@ -125,12 +129,22 @@ subena=guac;
 int guad=Integer.parseInt(cl.get(i));
 subenb=guad;
 System.out.println(distancia);
-System.out.println(subena);
+System.out.println(subenb);
+if (subena  > 0) {
+	pasajeroa=pasajeroa+subena-bajana;
+	bagona=pasajeroa/10;
+	System.out.println("necesita " + bagona);		
+}
+
+if (subenb  > 0) {
+	pasajerob=pasajerob+subenb-bajanb;
+	bagonb=pasajerob/40;
+	if (bagonb  > 0   && bagonb < 1) {	
+	System.out.println("necesita 1");	
+	}
+}
 
 
-
-dibujar pr=new dibujar();
-this.add(pr);
 }
 
 public void cargar (){
