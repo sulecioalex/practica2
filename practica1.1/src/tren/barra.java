@@ -102,8 +102,7 @@ public void metodos()
 	
 }
 public void leermenos4(){
-System.out.print(i);
-System.out.print(r);
+
 int paa= Integer.parseInt(cl.get(i-1));
 int pab= Integer.parseInt(cl.get(i-3));
 pasajeroa=pasajeroa - paa+ pab;
@@ -155,7 +154,7 @@ System.out.println(subenb);
 if (subena  > 0) {
 	pasajeroa=pasajeroa+subena-bajana;
 	bagona=pasajeroa/10;
-	System.out.println("necesita " + bagona);	
+	System.out.println("necesita " + bagona+ " bagones clase 1");	
 	carbona=(bagona * 10);
 	
 }
@@ -164,7 +163,7 @@ if (subenb  > 0) {
 	pasajerob=pasajerob+subenb-bajanb;
 	bagonb=Math.ceil (pasajerob/40);
 		
-	System.out.println("necesita "+ bagonb);
+	System.out.println("necesita "+ bagonb+"  bagones clase 2");
 	carbonb= Math.ceil (bagonb*10);
 
 }
@@ -173,7 +172,7 @@ carbon=carbona+carbonb+distancia;
 
 
 carbon=Math.ceil (carbon/100);
-System.out.println(carbon);
+System.out.println("necesita "+  carbon +" bagones de carbon");
 
 
 }
